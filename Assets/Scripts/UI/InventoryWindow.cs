@@ -24,7 +24,7 @@ public class InventoryWindow : BaseWindow
     [SerializeField] private GameObject _prefab;
     private float _slotSizeDeltaY;
 
-    private ItemSlot[] _slots;
+    private readonly List<ItemSlot> _slots = new();
     private ItemSlot _currenSlot;
 
     private protected override void Awake()
@@ -53,12 +53,12 @@ public class InventoryWindow : BaseWindow
 
     public override void Hide()
     {
-        for (int i = 0; i < _slots.Length; i++)
+        for (int i = 0; i < _slots.Count; i++)
         {
             if (_slots[i] != null && _slots[i].gameObject != null)
                 Destroy(_slots[i].gameObject);
         }
-        _slots = null;
+        _slots.Clear();
         base.Hide();
     }
 
@@ -105,33 +105,38 @@ public class InventoryWindow : BaseWindow
         _currenSlot = null;
         int childCount = _content.childCount;
 
-        for (int i = childCount - 1; i >= 0; i--)
+        // Clear the existing slots
+        foreach (var slot in _slots)
         {
-            var child = _content.GetChild(i);
-            Destroy(child.gameObject);
+            Destroy(slot.gameObject);
         }
 
-        _slots = new ItemSlot[_unit.Items.Count];
+        _slots.Clear(); // Clear the list
 
         for (int i = 0; i < _unit.Items.Count; i++)
         {
             if (_unit.Items[i] == null || string.IsNullOrEmpty(_unit.Items[i].Id))
                 continue;
+
             GameObject slotGO = Instantiate(_prefab, _content);
             ItemSlot slot = slotGO.GetComponent<ItemSlot>();
             slot.Initialize(_unit.Items[i]);
 
-            if (i > 0)
-            {
-                slotGO.transform.localPosition = new Vector3(slotGO.transform.localPosition.x, slotGO.transform.localPosition.y - _slotSizeDeltaY * _content.childCount, slotGO.transform.localPosition.z);
-            }
+            // Position slots based on the current index
+            slotGO.transform.localPosition = new Vector3(
+                slotGO.transform.localPosition.x,
+                -_slotSizeDeltaY * i,
+                slotGO.transform.localPosition.z
+            );
 
-            _slots[i] = slot;
+            _slots.Add(slot); // Add the new slot to the list
         }
-        _content.sizeDelta = new Vector2(_content.sizeDelta.x, _slotSizeDeltaY * _content.childCount / 2);
+
+        _content.sizeDelta = new Vector2(_content.sizeDelta.x, _slotSizeDeltaY * _unit.Items.Count / 2);
         DOTween.Kill(_scrollRect);
         _scrollRect.DOVerticalNormalizedPos(1f, 0.3f);
     }
+
     private void OnSelectSlot(OnSelectSlot data)
     {
         if (IsHidden)

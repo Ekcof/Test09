@@ -23,7 +23,6 @@ public abstract class BaseWindow : MonoBehaviour
         CurrentWindow = this;
         IsHidden = false;
         Initialize();
-        Debug.Log("______Initialized Inventory");
         DOTween.Kill(transform);
         transform.DOScale(1, 0.3f);
     }
