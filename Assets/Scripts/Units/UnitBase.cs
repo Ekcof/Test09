@@ -1,0 +1,159 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class UnitBase : MonoBehaviour
+{
+    [SerializeField] private protected Direction _direction = Direction.South;
+    [SerializeField] private protected Uniform _uniform;
+    [SerializeField] private protected Helmet _helmet;
+    [SerializeField] private protected int _money;
+    [SerializeField] private protected readonly List<ItemBase> _items = new List<ItemBase>();
+    public int Money => _money;
+    public List<ItemBase> Items => _items;
+    public Uniform Uniform => _uniform;
+    public Helmet Helmet => _helmet;
+
+    [Header("Animated parts of player")]
+    [SerializeField] private Animator _animator;
+    [SerializeField] private Animator _uniformAnimator;
+    [SerializeField] private Animator _helmetAnimator;
+
+    const string _idleN = "IdleN";
+    const string _idleE = "IdleE";
+    const string _idleS = "IdleS";
+    const string _idleW = "IdleW";
+
+    const string _walkN = "WalkN";
+    const string _walkE = "WalkE";
+    const string _walkS = "WalkS";
+    const string _walkW = "WalkW";
+
+    private protected virtual void Awake()
+    {
+        EventsBus.Subscribe<OnDropItem>(OnDropItem);
+        EventsBus.Subscribe<OnAddItem>(OnAddItem);
+        EventsBus.Subscribe<OnGetPayment>(OnGetPayment);
+    }
+
+    private protected virtual void OnDestroy()
+    {
+        EventsBus.Unsubscribe<OnDropItem>(OnDropItem);
+        EventsBus.Unsubscribe<OnAddItem>(OnAddItem);
+        EventsBus.Unsubscribe<OnGetPayment>(OnGetPayment);
+    }
+
+    public void SetAnimation(bool isWalking, Direction direction)
+    {
+        string state = null;
+        if (direction == Direction.None)
+            direction = _direction;
+
+        if (!isWalking)
+        {
+            switch (direction)
+            {
+                case Direction.North: state = _idleN; break;
+                case Direction.East: state = _idleE; break;
+                case Direction.South: state = _idleS; break;
+                case Direction.West: state = _idleW; break;
+            }
+        }
+        else
+            switch (direction)
+            {
+                case Direction.North: state = _walkN; break;
+                case Direction.East: state = _walkE; break;
+                case Direction.South: state = _walkS; break;
+                case Direction.West: state = _walkW; break;
+            }
+
+        if (!string.IsNullOrEmpty(state))
+        {
+            _direction = direction;
+            _animator.Play(state);
+            if (_uniformAnimator != null && _uniformAnimator.runtimeAnimatorController != null)
+                _uniformAnimator.Play(state);
+            if (_helmetAnimator != null && _helmetAnimator.runtimeAnimatorController != null)
+                _helmetAnimator.Play(state);
+        }
+    }
+
+    private void OnGetPayment(OnGetPayment data)
+    {
+        if (data.Payee != this)
+            return;
+        _money += data.Money;
+    }
+
+    public void EquipHelmet(Helmet helmet)
+    {
+        if (helmet == null || string.IsNullOrEmpty(helmet.Id))
+        {
+            _helmet = null;
+            _helmetAnimator.runtimeAnimatorController = null;
+            _helmetAnimator.gameObject.SetActive(false);
+        }
+        else
+        {
+            if (_helmet != null && !string.IsNullOrEmpty(_helmet.Id))
+                _items.Add(_helmet);
+            _helmet = helmet;
+            _helmetAnimator.runtimeAnimatorController = helmet.Animator;
+            _helmetAnimator.gameObject.SetActive(true);
+        }
+    }
+
+    public void EquipUniform(Uniform uniform)
+    {
+        if (uniform == null || string.IsNullOrEmpty(uniform.Id))
+        {
+            _uniform = null;
+            _uniformAnimator.runtimeAnimatorController = null;
+            _uniformAnimator.gameObject.SetActive(false);
+        }
+        else
+        {
+            if (_helmet != null && !string.IsNullOrEmpty(uniform.Id))
+                _items.Add(_uniform);
+            _uniform = uniform;
+            _uniformAnimator.runtimeAnimatorController = uniform.Animator;
+            _uniformAnimator.gameObject.SetActive(true);
+        }
+    }
+
+    private void OnDropItem(OnDropItem data)
+    {
+        if (data.Owner == this)
+            _items.Remove(data.Item);
+
+        if (data.IsDroppedDown)
+        {
+            GameObject droppedItem = Instantiate(ResourceManager.Instance.DroppedItemPrefab, transform.position, Quaternion.identity);
+            var container = droppedItem.GetComponent<ItemContainer>();
+            container.SetItem(data.Item);
+        }
+        //TODO : Instantiate an ItemContainer under the unit with the dropped item
+        //TODO : Drop a specific amount of items of such type
+    }
+
+    private protected void OnAddItem(OnAddItem data)
+    {
+        if (data.Item == null || string.IsNullOrEmpty(data.Item.Id))
+            return;
+        if (data.Obtainer == this)
+        {
+             var existingItem = _items.Find(item => item.Id == data.Item.Id);
+
+            if (existingItem != null && existingItem.IsStackable && data.Item.IsStackable)
+                existingItem.ChangeAmount(existingItem.Amount + data.Item.Amount);
+            else
+                _items.Add(data.Item);
+        }
+    }
+}
+
+public enum Direction
+{
+    North, East, South, West, None
+}

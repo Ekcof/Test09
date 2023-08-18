@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ItemSpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 512
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2114170188, guid: f1a76421070a26e4597b0a0c3f3e6781, type: 3}
+    - {fileID: -1186580515, guid: a615b282d66459c438d95909e24ed0ab, type: 3}
+    - {fileID: -536469880, guid: c37cd2cae04745645aba6e9b9807968d, type: 3}
+    - {fileID: -1151425666, guid: 772d19c7726351543a40dedf8ba6bb0b, type: 3}
+    - {fileID: 1766931954, guid: 4aed9fb51e92b6b4da073bf81eca10bd, type: 3}
+    - {fileID: -1310324548, guid: 4aed9fb51e92b6b4da073bf81eca10bd, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 2114170188, guid: f1a76421070a26e4597b0a0c3f3e6781, type: 3}
+  - {fileID: -1186580515, guid: a615b282d66459c438d95909e24ed0ab, type: 3}
+  - {fileID: 1766931954, guid: 4aed9fb51e92b6b4da073bf81eca10bd, type: 3}
+  - {fileID: -1310324548, guid: 4aed9fb51e92b6b4da073bf81eca10bd, type: 3}
+  - {fileID: -1151425666, guid: 772d19c7726351543a40dedf8ba6bb0b, type: 3}
+  - {fileID: -536469880, guid: c37cd2cae04745645aba6e9b9807968d, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - uniform0
+  - uniform1
+  - potion0
+  - water0
+  - hat1
+  - hat0
+  m_RenderDataMap: {}
+  m_Tag: ItemSpriteAtlas
+  m_IsVariant: 0
