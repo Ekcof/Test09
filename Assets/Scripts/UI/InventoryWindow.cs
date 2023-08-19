@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class InventoryWindow : BaseWindow
 {
     [SerializeField] private UnitBase _unit;
-    [SerializeField] private ScrollRect _scrollRect;
-    [SerializeField] private RectTransform _content;
+    [SerializeField] private ItemScrollRectManager _scrollManager;
+
     [SerializeField] private Button _equipButton;
     [SerializeField] private Button _dropButton;
 
@@ -101,43 +101,9 @@ public class InventoryWindow : BaseWindow
             _helmetImage.gameObject.SetActive(false);
             _helmetImage.sprite = null;
         }
-
         _currenSlot = null;
-        int childCount = _content.childCount;
 
-        // Clear the existing slots
-        foreach (var slot in _slots)
-        {
-            Destroy(slot.gameObject);
-        }
-
-        _slots.Clear();
-
-        for (int i = 0; i < _unit.Items.Count; i++)
-        {
-            if (_unit.Items[i] == null || string.IsNullOrEmpty(_unit.Items[i].Id))
-            {
-                Debug.Log($"________The {_unit.Items[i]} is null. Continue");
-                continue;
-            }
-
-            GameObject slotGO = Instantiate(_prefab, _content);
-            ItemSlot slot = slotGO.GetComponent<ItemSlot>();
-            slot.Initialize(_unit.Items[i]);
-
-            // Position slots based on the current index
-            slotGO.transform.localPosition = new Vector3(
-                slotGO.transform.localPosition.x,
-                -_slotSizeDeltaY * i,
-                slotGO.transform.localPosition.z
-            );
-
-            _slots.Add(slot); // Add the new slot to the list
-        }
-
-        _content.sizeDelta = new Vector2(_content.sizeDelta.x, _slotSizeDeltaY * _unit.Items.Count / 2);
-        DOTween.Kill(_scrollRect);
-        _scrollRect.DOVerticalNormalizedPos(1f, 0.3f);
+        _scrollManager.FillScrollRect(_unit);
     }
 
     private void OnSelectSlot(OnSelectSlot data)

@@ -1744,6 +1744,7 @@ MonoBehaviour:
   _unit: {fileID: 0}
   _scrollRect: {fileID: 8384406282133501045}
   _content: {fileID: 8384406281533073396}
+  _scrollManager: {fileID: 6022499523885583700}
   _equipButton: {fileID: 8384406281846510063}
   _dropButton: {fileID: 8384406280784025322}
   _uniformImage: {fileID: 8945831536789324526}
@@ -2024,6 +2025,7 @@ GameObject:
   - component: {fileID: 8384406282133501047}
   - component: {fileID: 8384406282133501044}
   - component: {fileID: 8384406282133501045}
+  - component: {fileID: 6022499523885583700}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -2121,6 +2123,21 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6022499523885583700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8384406282133501035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358eab1f79de75d498b58179b02656c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scrollRect: {fileID: 8384406282133501045}
+  _content: {fileID: 8384406281533073396}
+  _slotPrefab: {fileID: 1774497564871486870, guid: 6d4e7f2ef47551c47a53ffe709445601, type: 3}
 --- !u!1 &8384406282435138396
 GameObject:
   m_ObjectHideFlags: 0

@@ -24,20 +24,22 @@ public class ItemSlot : MonoBehaviour
         EventsBus.Subscribe<OnSelectSlot>(OnSelectSlot);
     }
 
-    public void Initialize(ItemBase item)
+    public void Initialize(ItemBase item, UnitBase owner)
     {
         if (item == null)
         {
             Debug.Log("________Error: item is null");
             return;
         }
+
         _item = item;
         _logo.sprite = ResourceManager.Instance.GetSpriteByID(item.Id);
         _title.text = item.Name;
-        _price.text = $"${item.BasePrice}";
+        var price = (int)(item.BasePrice * owner.TradeModificator);
+        _price.text = $"${price}";
         _amount.text = item.Amount > 1 ? $"x{item.Amount}" : string.Empty;
         _button.onClick.RemoveAllListeners();
-        _button.onClick.AddListener(() => EventsBus.Publish(new OnSelectSlot { Slot = this }));
+        _button.onClick.AddListener(() => EventsBus.Publish(new OnSelectSlot { Slot = this, Owner = owner }));
     }
 
     private void OnSelectSlot(OnSelectSlot data)

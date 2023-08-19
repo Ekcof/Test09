@@ -8,11 +8,13 @@ public class UnitBase : MonoBehaviour
     [SerializeField] private protected Uniform _uniform;
     [SerializeField] private protected Helmet _helmet;
     [SerializeField] private protected int _money;
+    [SerializeField] private float _traderModificator = 1f;
     [SerializeField] private protected readonly List<ItemBase> _items = new List<ItemBase>();
     public int Money => _money;
     public List<ItemBase> Items => _items;
     public Uniform Uniform => _uniform;
     public Helmet Helmet => _helmet;
+    public float TradeModificator => _traderModificator;
 
     [Header("Animated parts of player")]
     [SerializeField] private Animator _animator;

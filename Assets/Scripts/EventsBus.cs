@@ -81,7 +81,7 @@ public class OnOpenWindow
 public class OnSelectSlot
 {
     public ItemSlot Slot;
-    public ItemBase Item;
+    public UnitBase Owner;
 }
 
 public class OnDropItem
