@@ -98,6 +98,7 @@ public class UnitBase : MonoBehaviour
         {
             if (_helmet != null && !string.IsNullOrEmpty(_helmet.Id))
                 _items.Add(_helmet);
+            _items.Remove(helmet);
             _helmet = helmet;
             _helmetAnimator.runtimeAnimatorController = helmet.Animator;
             _helmetAnimator.gameObject.SetActive(true);
@@ -114,8 +115,9 @@ public class UnitBase : MonoBehaviour
         }
         else
         {
-            if (_helmet != null && !string.IsNullOrEmpty(uniform.Id))
+            if (_uniform != null && !string.IsNullOrEmpty(_uniform.Id))
                 _items.Add(_uniform);
+            _items.Remove(uniform);
             _uniform = uniform;
             _uniformAnimator.runtimeAnimatorController = uniform.Animator;
             _uniformAnimator.gameObject.SetActive(true);

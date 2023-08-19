@@ -111,12 +111,15 @@ public class InventoryWindow : BaseWindow
             Destroy(slot.gameObject);
         }
 
-        _slots.Clear(); // Clear the list
+        _slots.Clear();
 
         for (int i = 0; i < _unit.Items.Count; i++)
         {
             if (_unit.Items[i] == null || string.IsNullOrEmpty(_unit.Items[i].Id))
+            {
+                Debug.Log($"________The {_unit.Items[i]} is null. Continue");
                 continue;
+            }
 
             GameObject slotGO = Instantiate(_prefab, _content);
             ItemSlot slot = slotGO.GetComponent<ItemSlot>();
@@ -170,7 +173,6 @@ public class InventoryWindow : BaseWindow
             _unit.EquipHelmet(helmet);
         else if (_currenSlot.Item is Uniform uniform)
             _unit.EquipUniform(uniform);
-        EventsBus.Publish<OnDropItem>(new OnDropItem { Item = _currenSlot.Item, Owner = _unit });
         Refresh();
     }
 
