@@ -17,6 +17,7 @@ public class TradeWindow : BaseWindow
 
     [SerializeField] private TMPro.TextMeshProUGUI _playerMoneyText;
     [SerializeField] private TMPro.TextMeshProUGUI _traderMoneyText;
+    [SerializeField] private TMPro.TextMeshProUGUI _warningText;
 
     private UnitBase _player;
     private UnitBase _trader;
@@ -66,6 +67,7 @@ public class TradeWindow : BaseWindow
 
         _title.text = string.Empty;
         _description.text = string.Empty;
+        _warningText.text = string.Empty;
     }
 
     private void OnSelectSlot(OnSelectSlot data)
@@ -87,6 +89,7 @@ public class TradeWindow : BaseWindow
 
         _description.text = _currentItem.Description;
         _title.text = _currentItem.Name;
+        _warningText.text = string.Empty;
         _itemImage.sprite = ResourceManager.Instance.GetSpriteByID(_title.text);
     }
 
@@ -95,8 +98,31 @@ public class TradeWindow : BaseWindow
         if (_currentItem == null)
             return;
 
-
-
+        if (_isBuying)
+        {
+            var price = (int)(_currentItem.BasePrice * _trader.TradeModificator);
+            if (_player.Money >= price)
+            {
+                EventsBus.Publish(new OnTradeItem { Buyer = _player, Seller = _trader, Item = _currentItem, Price = price });
+            }
+            else
+            {
+                _warningText.text = "You have not enough money";
+            }
+        }
+        else
+        {
+            var price = (int)(_currentItem.BasePrice * _player.TradeModificator);
+            if (_trader.Money >= price)
+            {
+                EventsBus.Publish(new OnTradeItem { Buyer = _player, Seller = _trader, Item = _currentItem, Price = price });
+            }
+            else
+            {
+                _warningText.text = "You have not enough money";
+            }
+        }
+        Refresh();
     }
 
 }

@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class UnitBase : MonoBehaviour
@@ -36,6 +38,7 @@ public class UnitBase : MonoBehaviour
         EventsBus.Subscribe<OnDropItem>(OnDropItem);
         EventsBus.Subscribe<OnAddItem>(OnAddItem);
         EventsBus.Subscribe<OnGetPayment>(OnGetPayment);
+        EventsBus.Subscribe<OnTradeItem>(OnTradeItem);
     }
 
     private protected virtual void OnDestroy()
@@ -43,6 +46,7 @@ public class UnitBase : MonoBehaviour
         EventsBus.Unsubscribe<OnDropItem>(OnDropItem);
         EventsBus.Unsubscribe<OnAddItem>(OnAddItem);
         EventsBus.Unsubscribe<OnGetPayment>(OnGetPayment);
+        EventsBus.Unsubscribe<OnTradeItem>(OnTradeItem);
     }
 
     public void SetAnimation(bool isWalking, Direction direction)
@@ -85,7 +89,57 @@ public class UnitBase : MonoBehaviour
     {
         if (data.Payee != this)
             return;
-        _money += data.Money;
+        AddMoney(data.Money);
+    }
+
+    private void AddMoney(int money)
+    {
+        _money = Math.Clamp(_money + money, 0, int.MaxValue);
+    }
+
+    private void OnTradeItem(OnTradeItem data)
+    {
+        if (data.Item == null || string.IsNullOrEmpty(data.Item.Id))
+            return;
+
+        if (data.Buyer == this)
+        {
+            if (!data.Item.IsStackable)
+                _items.Add(data.Item);
+            else if (data.Item.Amount > 1)
+            {
+                int amount = data.IsSellingAll ? data.Item.Amount : 1;
+
+                var existingItem = _items.FirstOrDefault(x => x.Id == data.Item.Id);
+
+                if (existingItem != null)
+                    existingItem.AddAmount(amount);
+                else
+                {
+                    var item = ResourceManager.Instance.CreateNewItem(data.Item.Id, amount);
+                    _items.Add(item);
+                }
+            }
+            else
+                _items.Add(data.Item);
+            AddMoney(-data.Price);
+        }
+        else if (data.Seller == this)
+        {
+            if (!data.Item.IsStackable)
+            {
+                _items.Remove(data.Item);
+            }
+            else if (data.Item.Amount > 1 && !data.IsSellingAll)
+            {
+                data.Item.AddAmount(-1);
+            }
+            else
+            {
+                _items.Remove(data.Item);
+            }
+            AddMoney(data.Price);
+        }
     }
 
     public void EquipHelmet(Helmet helmet)
@@ -137,7 +191,6 @@ public class UnitBase : MonoBehaviour
             var container = droppedItem.GetComponent<ItemContainer>();
             container.SetItem(data.Item);
         }
-        //TODO : Instantiate an ItemContainer under the unit with the dropped item
         //TODO : Drop a specific amount of items of such type
     }
 
@@ -147,7 +200,7 @@ public class UnitBase : MonoBehaviour
             return;
         if (data.Obtainer == this)
         {
-             var existingItem = _items.Find(item => item.Id == data.Item.Id);
+            var existingItem = _items.Find(item => item.Id == data.Item.Id);
 
             if (existingItem != null && existingItem.IsStackable && data.Item.IsStackable)
                 existingItem.ChangeAmount(existingItem.Amount + data.Item.Amount);

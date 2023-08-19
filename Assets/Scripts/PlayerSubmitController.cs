@@ -55,6 +55,7 @@ public class PlayerSubmitController : MonoBehaviour
     {
         Debug.Log("E key pressed");
         _unitBase.TryPickUpItem();
+        //Try to start Trade
     }
 
     private void OnSpaceKeyPressed(InputAction.CallbackContext context)

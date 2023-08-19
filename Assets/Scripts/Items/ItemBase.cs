@@ -38,4 +38,10 @@ public class ItemBase
             amount = 0;
     }
 
+    public void AddAmount(int amount)
+    {
+        _amount += amount;
+        if (_amount < 0)
+            amount = 0;
+    }
 }

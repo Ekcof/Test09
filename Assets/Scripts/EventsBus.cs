@@ -97,6 +97,15 @@ public class OnAddItem
     public ItemBase Item;
 }
 
+public class OnTradeItem
+{
+    public UnitBase Buyer;
+    public UnitBase Seller;
+    public ItemBase Item;
+    public int Price;
+    public bool IsSellingAll;
+}
+
 public class OnEnterItemPickableZone
 {
     public GameObject Player;
