@@ -12,6 +12,7 @@ public class UnitBase : MonoBehaviour
     [SerializeField] private protected int _money;
     [SerializeField] private float _traderModificator = 1f;
     [SerializeField] private protected readonly List<ItemBase> _items = new List<ItemBase>();
+    [SerializeField] private string _loadoutId;
     public int Money => _money;
     public List<ItemBase> Items => _items;
     public Uniform Uniform => _uniform;
@@ -39,6 +40,9 @@ public class UnitBase : MonoBehaviour
         EventsBus.Subscribe<OnAddItem>(OnAddItem);
         EventsBus.Subscribe<OnGetPayment>(OnGetPayment);
         EventsBus.Subscribe<OnTradeItem>(OnTradeItem);
+
+        if (!string.IsNullOrEmpty(_loadoutId))
+            ApplyPresetLoadOut();
     }
 
     private protected virtual void OnDestroy()
@@ -182,8 +186,10 @@ public class UnitBase : MonoBehaviour
 
     private void OnDropItem(OnDropItem data)
     {
-        if (data.Owner == this)
-            _items.Remove(data.Item);
+        if (data.Owner != this)
+            return;
+
+        _items.Remove(data.Item);
 
         if (data.IsDroppedDown)
         {
@@ -206,6 +212,27 @@ public class UnitBase : MonoBehaviour
                 existingItem.ChangeAmount(existingItem.Amount + data.Item.Amount);
             else
                 _items.Add(data.Item);
+        }
+    }
+
+    private protected void ApplyPresetLoadOut()
+    {
+        var loadout = ResourceManager.Instance.GetLoadOut(_loadoutId);
+
+        if (loadout.Item1 != null && loadout.Item1.Count > 1)
+        {
+            for (int i = 0; i < loadout.Item1.Count; i++)
+            {
+                _items.Add(loadout.Item1[i]);
+            }
+        }
+        if (loadout.Item2 != null && !(string.IsNullOrEmpty(loadout.Item2.Id)))
+        {
+            EquipHelmet(loadout.Item2);
+        }
+        if (loadout.Item3 != null && !(string.IsNullOrEmpty(loadout.Item3.Id)))
+        {
+            EquipUniform(loadout.Item3);
         }
     }
 }

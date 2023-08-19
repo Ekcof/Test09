@@ -683,6 +683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteAtlas: {fileID: 4343727234628468602, guid: 12fd4e7be5fe76049a53131c458e0082, type: 2}
   _itemHolder: {fileID: 11400000, guid: 4d952e5bc321e6d468f562c8c173fab5, type: 2}
+  _loadoutHolder: {fileID: 11400000, guid: 0ad7b989e9452394fa8634f01b94c7c5, type: 2}
   _droppedItemPrefab: {fileID: 307214869028695020, guid: c4c6d55eff7c6f04491a7e4cf719d31a, type: 3}
 --- !u!1001 &466864029
 PrefabInstance:
@@ -2941,6 +2942,7 @@ GameObject:
   - component: {fileID: 3275721488279717252}
   - component: {fileID: 4994186900436063950}
   - component: {fileID: 4994186900436063951}
+  - component: {fileID: 4994186900436063952}
   m_Layer: 0
   m_Name: Trader
   m_TagString: Untagged
@@ -3213,6 +3215,45 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4994186900436063952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2673522993755887528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22e8037ca27faa4f90f3f4f74aadd6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _direction: 2
+  _uniform:
+    _id: 
+    _name: 
+    _description: 
+    _iconId: 
+    _basePrice: 0
+    _amount: 0
+    _isStackable: 0
+    _animator: {fileID: 0}
+    _armourPoints: 0
+  _helmet:
+    _id: 
+    _name: 
+    _description: 
+    _iconId: 
+    _basePrice: 0
+    _amount: 0
+    _isStackable: 0
+    _animator: {fileID: 0}
+    _armourPoints: 0
+  _money: 1000
+  _traderModificator: 1.1
+  _loadoutId: trader0
+  _animator: {fileID: 4994186900436063951}
+  _uniformAnimator: {fileID: 7078827311211624906}
+  _helmetAnimator: {fileID: 5989587531870986096}
 --- !u!1 &5989587531870986095
 GameObject:
   m_ObjectHideFlags: 0
@@ -3223,6 +3264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2310422574136940858}
   - component: {fileID: 1958033500101831595}
+  - component: {fileID: 5989587531870986096}
   m_Layer: 0
   m_Name: Helmet
   m_TagString: Untagged
@@ -3230,6 +3272,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!95 &5989587531870986096
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5989587531870986095}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7078827311211624905
 GameObject:
   m_ObjectHideFlags: 0
@@ -3240,6 +3302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4326787021281706467}
   - component: {fileID: 3035103376388447253}
+  - component: {fileID: 7078827311211624906}
   m_Layer: 0
   m_Name: Uniform
   m_TagString: Untagged
@@ -3247,6 +3310,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!95 &7078827311211624906
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7078827311211624905}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &7494167137787009759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3369,11 +3452,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8384406281533073396, guid: 12bfcdc736683e3489fefe8459a62859, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -726782.8
+      value: -895690.7
       objectReference: {fileID: 0}
     - target: {fileID: 8384406281533073396, guid: 12bfcdc736683e3489fefe8459a62859, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 750473.8
+      value: 921708.6
       objectReference: {fileID: 0}
     - target: {fileID: 8384406281637933340, guid: 12bfcdc736683e3489fefe8459a62859, type: 3}
       propertyPath: m_Name

@@ -82,6 +82,8 @@
     <Compile Include="Assets\Scripts\CameraFollower.cs" />
     <Compile Include="Assets\Scripts\ResourceManager.cs" />
     <Compile Include="Assets\Scripts\UI\TradeWindow.cs" />
+    <Compile Include="Assets\Scripts\Units\LoadOut.cs" />
+    <Compile Include="Assets\Scripts\SO\LoadOutHolder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

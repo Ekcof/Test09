@@ -7,11 +7,13 @@ public class ResourceManager : MonoBehaviour
 {
     [SerializeField] private SpriteAtlas _spriteAtlas;
     [SerializeField] private ItemHolder _itemHolder;
+    [SerializeField] private LoadOutHolder _loadoutHolder;
     [SerializeField] private GameObject _droppedItemPrefab;
+
     public GameObject DroppedItemPrefab => _droppedItemPrefab;
 
     private static ResourceManager _instance;
-    
+
 
     public static ResourceManager Instance
     {
@@ -50,6 +52,25 @@ public class ResourceManager : MonoBehaviour
         item.ChangeAmount(amount);
         return item;
 
+    }
+
+    public (List<ItemBase>, Helmet, Uniform) GetLoadOut(string id)
+    {
+        var loadout = _loadoutHolder.GetLoadOutById(id);
+        if (loadout == null)
+            return (null, null, null);
+
+        var items = new List<ItemBase>();
+        foreach (var item in loadout.ItemDatas)
+        {
+            if (item != null && !string.IsNullOrEmpty(item.Id) && item.Amount > 0)
+                items.Add(CreateNewItem(id, item.Amount));
+        }
+
+        var helmet = CreateNewItem(loadout.HelmetId);
+        var uniform = CreateNewItem(loadout.UniformId);
+
+        return (items, (helmet is Helmet newHelmet ? newHelmet : null),(uniform is Uniform newUniform ? newUniform : null));
     }
 
 }

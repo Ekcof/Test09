@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
@@ -37,64 +35,5 @@ public class ItemHolder : ScriptableObject
         }
 
         return item;
-    }
-
-    private Uniform CloneTheUniform(Uniform oldItem)
-    {
-        Uniform newItem = null;
-        if (oldItem != null)
-        {
-            newItem = new Uniform(
-                oldItem.Id,
-                oldItem.Name,
-                oldItem.Description,
-                oldItem.IconId,
-                oldItem.BasePrice,
-                oldItem.Amount,
-                oldItem.IsStackable,
-                oldItem.Animator,
-                oldItem.ArmourPoints);
-        }
-        return newItem;
-    }
-
-    private Helmet CloneTheHelmet(Helmet oldItem)
-    {
-        Helmet newItem = null;
-        if (oldItem != null)
-        {
-            newItem = new Helmet(
-                oldItem.Id,
-                oldItem.Name,
-                oldItem.Description,
-                oldItem.IconId,
-                oldItem.BasePrice,
-                oldItem.Amount,
-                oldItem.IsStackable,
-                oldItem.Animator,
-                oldItem.ArmourPoints);
-        }
-        return newItem;
-    }
-
-    private DisposableItem CloneTheDisposableItem(string id)
-    {
-        DisposableItem newItem = null;
-
-        DisposableItem oldItem = _disposables.FirstOrDefault(s => s.Id == id);
-        if (oldItem != null)
-        {
-            newItem = new DisposableItem(
-                oldItem.Id,
-                oldItem.Name,
-                oldItem.Description,
-                oldItem.IconId,
-                oldItem.BasePrice,
-                oldItem.Amount,
-                oldItem.IsStackable,
-                oldItem.Effect,
-                oldItem.Value);
-        }
-        return newItem;
     }
 }
