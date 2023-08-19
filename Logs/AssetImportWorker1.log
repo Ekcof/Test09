@@ -791,3 +791,15 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1517.384258 seconds.
+  path: Assets/Prefab/Torch.prefab
+  artifactKey: Guid(6a607ebe1f3248e45ba463ef77dc7ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Torch.prefab using Guid(6a607ebe1f3248e45ba463ef77dc7ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b65c824a9ada4eeb048f7f6a9798ef') in 0.123734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.607935 seconds.
+  path: Assets/Prefab/UI/UpperPanel.prefab
+  artifactKey: Guid(26e09999d17dd6e47bc7717ad705f74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/UpperPanel.prefab using Guid(26e09999d17dd6e47bc7717ad705f74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d5c42cdb8757fd45d08952a705929a') in 0.054498 seconds 

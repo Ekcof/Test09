@@ -31,3 +31,5 @@ Thumbs.db
 
 # Crashlytics generated file
 /crashlytics-build.properties
+
+.log

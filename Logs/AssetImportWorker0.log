@@ -797,3 +797,447 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 993.994610 seconds.
+  path: Assets/InventoryWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InventoryWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1618bcfface5953bce7e37e5914e15ba') in 0.128674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 162.416690 seconds.
+  path: Assets/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59cc32de093418166807628c31e461cb') in 0.033463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.107771 seconds.
+  path: Assets/Prefab
+  artifactKey: Guid(0b9576a3f2595054ebc467b3d80744f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab using Guid(0b9576a3f2595054ebc467b3d80744f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5fcdca89d405b545ad6dfcfa8193fe6') in 0.010792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.040139 seconds.
+  path: Assets/Prefab/Player.prefab
+  artifactKey: Guid(b609c8cfd2512fe49ab87b96cbf6e119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Player.prefab using Guid(b609c8cfd2512fe49ab87b96cbf6e119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e61309445181ec12a33627eb46c90b') in 0.125099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.549548 seconds.
+  path: Assets/Prefab/UI
+  artifactKey: Guid(e22413f25f075244cb7c4604b61edc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI using Guid(e22413f25f075244cb7c4604b61edc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ebcefa3fde697df1cb9daedf753aef3') in 0.013897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.031036 seconds.
+  path: Assets/Prefab/UI/Slot.prefab
+  artifactKey: Guid(6d4e7f2ef47551c47a53ffe709445601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Slot.prefab using Guid(6d4e7f2ef47551c47a53ffe709445601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd0c5236821f19a03cb05261e3aaddd') in 0.030180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.389655 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74becba6be359f0dcdb32017bda88cad') in 0.020059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.812810 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d31661ad387b7f38789a53c2c8929c') in 0.022151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.572319 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e43d47969098a443efdffda2509a993') in 0.025532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.570934 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052e408985a445df0a36df623b774609') in 0.022385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.385557 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d06b2c8662602bdfd4221fcb17c3402') in 0.023447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.585526 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de1ce429c39defe6ed0692983be1ce80') in 0.022840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.905463 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6dd8d22e18d5014cb7f33045238677a') in 0.019809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.289065 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd809c0ee19ef533860b540c6806955f0') in 0.021776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.445138 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe7aaf4cf264483e6fe4f06b9cf61847') in 0.020979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.429035 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb8aa278d1ac067451ea0b0650f0cdb1') in 0.022124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.382573 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3983cb960b389a3578d2a04063ad9421') in 0.021884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.802445 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a7ec951d8ba08f48a30f2f2dcac2054') in 0.024609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.607809 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '789f1a492ca6926d1565e248f5c81c84') in 0.022859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.079796 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef434224e21fc16f6a615cac4cd57879') in 0.020179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.800103 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '406bf45d393605fa78c3f25568394777') in 0.022331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.605386 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ea5066a98fb81514e40c08cc35063d1') in 0.023745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.993872 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e81f9b03ddbe442b9ec32376c21d8c63') in 0.021926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.872030 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c250b66b5ae528ac61db5c94a76ddce') in 0.020573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.591141 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b252dff56c2883db4cee44e458b68b') in 0.021119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.791798 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa88b022e61212b5678f14170b792727') in 0.023857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.383876 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a8f16fc1927f7477e0bbfc95fe7dfd9') in 0.021646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.638663 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76c9f6a940bc19f7db87621d777a8f2e') in 0.023051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.202079 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3138965e23bd5b203bb52caeff6cadbd') in 0.022018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.006819 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec0a8d558e9cef4823d88c59c9cc492') in 0.020077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.607436 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c933c004f9f2178eb84fb42c09df8136') in 0.020115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.208092 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f29a6a707877c08a2b9d867c339d4f4') in 0.024672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.581497 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fcb03e37e38e3586d6b8e0650e8ff6c') in 0.023936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.375885 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aed3cd813e64b0361ba204da27e6c060') in 0.023999 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.469754 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a4819985f8b238de6c633a8abe65ad') in 0.021517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.601964 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc72328652832700982aeafc0bb57a85') in 0.023721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.418337 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc9a624f37150496eaf6d8a0b32a136') in 0.021754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.019901 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '464bf4e4e40ee3a0e3ed8d23217417ff') in 0.021772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.390013 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2141a522bc1bfbba3edccbe06483959') in 0.022511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.034191 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aabf3a7075012af7192acfa6ffe4a3a4') in 0.021503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.603725 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ede0ec5fd61affb5c10e676988ab6b0') in 0.023541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.978441 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adcab1697d6cab02b6477aaca8654340') in 0.023578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.230522 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315dff1a2c51b107509e31d09e2adf0e') in 0.020388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.047660 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f673015c9b69127bdc68be8e27d21ac') in 0.024730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.598489 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20d3302158c86e081b44adbe22bd066f') in 0.024970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.067009 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e2f94aea3faa289a85301f15ab0955d') in 0.020491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.570111 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a28b019317aebb60475a37caba81936') in 0.021601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.426915 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11cbffa60c158d0cfc3d42e0fbafeb04') in 0.023963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 126.695690 seconds.
+  path: Assets/Prefab/UI/InventoryWindow 1.prefab
+  artifactKey: Guid(1d8c9df9d3c7ea94cb265b4f68d409fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/InventoryWindow 1.prefab using Guid(1d8c9df9d3c7ea94cb265b4f68d409fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d9c0112e967e862b8d29cd41d18c9cc') in 0.030187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.291548 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c733bb2ee9ff9256fed20f30ece929ee') in 0.019577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.235740 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5fdafe8e467d715c44eee4ccf597d8') in 0.020827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.186918 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f35954febfed95483afd2e63c8a6a89') in 0.020285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.196985 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c44002e466427d2a3a8601873f7d40') in 0.020813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.573368 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc5f4263bf613ea96b145b17a0cf798') in 0.019614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.983382 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b25719ec137942a7ae8029b6a885f7bc') in 0.021890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.492485 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7a7146439db897e27668674c9d56755') in 0.019737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.013447 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a6fd93b18aaccd0db98596824e73e33') in 0.021347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.219580 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff4b6ac550520fb32d97fca6f8ca408') in 0.020247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.814033 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32ab22c9fc4310406d7d3bc726381024') in 0.031039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.008088 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35120619849428c497726006f2884cac') in 0.024443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.008501 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca05ca1862de1e94498a77ceccfdfccc') in 0.023850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.562766 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d566bd3c644587c71f1079787c39f51') in 0.021800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.407095 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9393808059fdb00ef620fdd93d52527d') in 0.022327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.205025 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a88d215414d2be86d51fa2863154137') in 0.022523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.530020 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7b2cfb15a47610646b64dd75a332f0e') in 0.020219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.586296 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b660682a34473515ae33e5a081c052') in 0.020925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.598505 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d14d850a77b9ddbfb456b00ac5b2cb7') in 0.020625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.193168 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fa36b4c504a96311636b69cbcf51f64') in 0.019981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.935194 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db1aed3019a6723657bd24bf1a021b03') in 0.020970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.410538 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd22693e0b2e3ab216ecd0af7942ba60') in 0.021697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.966641 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dfa4de04a38fc7cb14dd83c81c0972f') in 0.020150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.810544 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81baa9b64863076796ae36efe7875bb5') in 0.024021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.225835 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d5d75fe771f314358d199551838c2cf') in 0.021288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.818826 seconds.
+  path: Assets/Prefab/UI/TradeWindow.prefab
+  artifactKey: Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/TradeWindow.prefab using Guid(d2e914c5bdea9ec46b65f680305d5977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9ebc29ab43057cddb65580cca380e7') in 0.019953 seconds 
