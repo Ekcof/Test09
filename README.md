@@ -1,7 +1,7 @@
 # Test09
 Interview Task.
 </br>
-The documentation file is here ![image_url](https://github.com/Ekcof/Test09/blob/main/Documentation for Interview Task.png)</br>
+The documentation file is [here](https://github.com/Ekcof/Test09/blob/main/Documentation%20for%20Interview%20Task.pdf) </br>
 There is a build.zip inside this project.</br>
 ## Controls:</br>
 Use WSAD or arrows to move your character.</br>
