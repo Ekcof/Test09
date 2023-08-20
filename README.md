@@ -1,8 +1,11 @@
 # Test09
 Interview Task.
-The documentation will be available soon.
-Use WSAD to move your character.
-I for open the inventory
-E for take the item nearby
+# The controls:</br>
+Use WSAD or arrows to move your character.</br>
+I for open the inventory</br>
+E for take the item nearby or start trading with merchant</br>
 </br>
 ![image_url](https://github.com/Ekcof/Test09/blob/main/screenShot1.png)
+![image_url](https://github.com/Ekcof/Test09/blob/main/screenShot2.png)
+</br>
+The documentation file is here ![image_url](https://github.com/Ekcof/Test09/blob/main/Documentation for Interview Task.png)
