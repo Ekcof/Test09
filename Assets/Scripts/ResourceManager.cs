@@ -49,7 +49,7 @@ public class ResourceManager : MonoBehaviour
             return null;
         }
 
-        item.ChangeAmount(amount);
+        item.SetAmount(item.IsStackable ? amount : 1);
         return item;
 
     }
@@ -64,7 +64,9 @@ public class ResourceManager : MonoBehaviour
         foreach (var item in loadout.ItemDatas)
         {
             if (item != null && !string.IsNullOrEmpty(item.Id) && item.Amount > 0)
+            {
                 items.Add(CreateNewItem(id, item.Amount));
+            }
         }
 
         var helmet = CreateNewItem(loadout.HelmetId);

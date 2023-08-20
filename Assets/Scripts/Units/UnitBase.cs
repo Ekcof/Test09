@@ -209,7 +209,7 @@ public class UnitBase : MonoBehaviour
             var existingItem = _items.Find(item => item.Id == data.Item.Id);
 
             if (existingItem != null && existingItem.IsStackable && data.Item.IsStackable)
-                existingItem.ChangeAmount(existingItem.Amount + data.Item.Amount);
+                existingItem.SetAmount(existingItem.Amount + data.Item.Amount);
             else
                 _items.Add(data.Item);
         }

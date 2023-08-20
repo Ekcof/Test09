@@ -31,7 +31,7 @@ public class ItemBase
         _isStackable = isStackable;
     }
 
-    public void ChangeAmount(int amount)
+    public void SetAmount(int amount)
     {
         _amount = amount;
         if (_amount < 0)

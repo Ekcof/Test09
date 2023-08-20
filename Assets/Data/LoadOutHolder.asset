@@ -23,3 +23,11 @@ MonoBehaviour:
       Amount: 1
     HelmetId: hat1
     UniformId: uniform0
+  - Id: trader1
+    ItemDatas:
+    - Id: potion1
+      Amount: 5
+    - Id: uniform1
+      Amount: 1
+    HelmetId: 
+    UniformId: uniform1

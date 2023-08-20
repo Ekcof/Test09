@@ -70,20 +70,21 @@
     <Compile Include="Assets\Scripts\EventsBus.cs" />
     <Compile Include="Assets\Scripts\SO\ItemHolder.cs" />
     <Compile Include="Assets\Scripts\PlayerMovementController.cs" />
+    <Compile Include="Assets\Scripts\UI\TradeWindow.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\Scripts\Units\UnitBase.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics2D.cs" />
     <Compile Include="Assets\Scripts\UI\BaseWindow.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <Compile Include="Assets\Scripts\Units\LoadOut.cs" />
     <Compile Include="Assets\Scripts\Units\UnitPlayer.cs" />
     <Compile Include="Assets\Scripts\UI\ItemSlot.cs" />
     <Compile Include="Assets\Scripts\PlayerSubmitController.cs" />
     <Compile Include="Assets\Scripts\CameraFollower.cs" />
     <Compile Include="Assets\Scripts\ResourceManager.cs" />
-    <Compile Include="Assets\Scripts\UI\TradeWindow.cs" />
-    <Compile Include="Assets\Scripts\Units\LoadOut.cs" />
     <Compile Include="Assets\Scripts\SO\LoadOutHolder.cs" />
+    <Compile Include="Assets\Scripts\Units\Trader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -22,6 +22,12 @@ i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scri
 ++SO
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\so\
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\so\
+++ItemHolder.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\so\itemholder.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\so\itemholder.cs
+++LoadOutHolder.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\so\loadoutholder.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\so\loadoutholder.cs
 ++UI
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\ui\
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\ui\
@@ -70,6 +76,18 @@ i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scri
 ++TextMesh Pro
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\textmesh pro\
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\textmesh pro\
+++Fonts
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\textmesh pro\fonts\
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\textmesh pro\fonts\
+++Resources
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\textmesh pro\resources\
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\textmesh pro\resources\
+++Shaders
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\textmesh pro\shaders\
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\textmesh pro\shaders\
+++Sprites
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\textmesh pro\sprites\
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\textmesh pro\sprites\
 ++Microsoft.Win32.Primitives
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:
@@ -751,48 +769,6 @@ i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scri
 ++Uniform.cs
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\items\uniform.cs
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\items\uniform.cs
-++ItemHolder.cs
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\so\itemholder.cs
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\so\itemholder.cs
-++LoadOutHolder.cs
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\so\loadoutholder.cs
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\so\loadoutholder.cs
-++Fonts
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\textmesh pro\fonts\
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\textmesh pro\fonts\
-++Resources
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\textmesh pro\resources\
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\textmesh pro\resources\
-++Shaders
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\textmesh pro\shaders\
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\textmesh pro\shaders\
-++Sprites
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\textmesh pro\sprites\
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\textmesh pro\sprites\
-++DOTweenModuleAudio.cs
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleaudio.cs
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleaudio.cs
-++DOTweenModuleEPOOutline.cs
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleepooutline.cs
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleepooutline.cs
-++DOTweenModulePhysics.cs
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmodulephysics.cs
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmodulephysics.cs
-++DOTweenModulePhysics2D.cs
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmodulephysics2d.cs
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmodulephysics2d.cs
-++DOTweenModuleSprite.cs
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmodulesprite.cs
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmodulesprite.cs
-++DOTweenModuleUI.cs
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleui.cs
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleui.cs
-++DOTweenModuleUnityVersion.cs
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleunityversion.cs
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleunityversion.cs
-++DOTweenModuleUtils.cs
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleutils.cs
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleutils.cs
 ++LiberationSans - OFL.txt
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\textmesh pro\fonts\liberationsans - ofl.txt
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\textmesh pro\fonts\liberationsans - ofl.txt
@@ -856,5 +832,29 @@ i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\text
 ++EmojiOne Attribution.txt
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\textmesh pro\sprites\emojione attribution.txt
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\textmesh pro\sprites\emojione attribution.txt
+++DOTweenModuleAudio.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleaudio.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleaudio.cs
+++DOTweenModuleEPOOutline.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleepooutline.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleepooutline.cs
+++DOTweenModulePhysics.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmodulephysics.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmodulephysics.cs
+++DOTweenModulePhysics2D.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmodulephysics2d.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmodulephysics2d.cs
+++DOTweenModuleSprite.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmodulesprite.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmodulesprite.cs
+++DOTweenModuleUI.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleui.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleui.cs
+++DOTweenModuleUnityVersion.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleunityversion.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleunityversion.cs
+++DOTweenModuleUtils.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleutils.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\dotween\modules\dotweenmoduleutils.cs
 ++Assembly-CSharp.Player
 i:{00000000-0000-0000-0000-000000000000}:Assembly-CSharp.Player
