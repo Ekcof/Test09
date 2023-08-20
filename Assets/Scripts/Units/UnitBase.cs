@@ -1,9 +1,12 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+
+/// <summary>
+/// Base class for all Units. It describes the movement logic, appearance and interaction with items
+/// </summary>
 public class UnitBase : MonoBehaviour
 {
     [SerializeField] private protected Direction _direction = Direction.South;

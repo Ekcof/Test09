@@ -10,7 +10,7 @@ public class ItemHolder : ScriptableObject
 
 
     /// <summary>
-    /// Make a new Item Object with the respect to it's subclass
+    /// Create a new Item Object with the respect to it's subclass
     /// </summary>
     /// <param name="id"></param>
     /// <returns></returns>

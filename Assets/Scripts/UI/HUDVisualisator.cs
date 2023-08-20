@@ -15,6 +15,7 @@ public class HUDVisualisator : MonoBehaviour
         EventsBus.Subscribe<OnChangeMoneyAmount>(OnChangeMoneyAmount);
         EventsBus.Subscribe<OnTogglePickableZone>(OnTogglePickableZone);
         EventsBus.Subscribe<OnToggleTraderZone>(OnToggleTraderZone);
+        Cursor.visible = false;
     }
 
     private void OnDestroy()

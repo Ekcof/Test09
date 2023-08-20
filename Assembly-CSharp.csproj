@@ -74,6 +74,7 @@
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\Scripts\Units\UnitBase.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Assets\TutorialPanel.cs" />
     <Compile Include="Assets\Scripts\Units\Trader.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics2D.cs" />
     <Compile Include="Assets\Scripts\UI\BaseWindow.cs" />
@@ -86,7 +87,6 @@
     <Compile Include="Assets\Scripts\Player\CameraFollower.cs" />
     <Compile Include="Assets\Scripts\ResourceManager.cs" />
     <Compile Include="Assets\Scripts\SO\LoadOutHolder.cs" />
-    <Compile Include="Assets\TutorialPanel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

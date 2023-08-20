@@ -25,6 +25,7 @@ public abstract class BaseWindow : MonoBehaviour
         Initialize();
         DOTween.Kill(transform);
         transform.DOScale(1, 0.3f);
+        Cursor.visible = true;
     }
 
     public virtual void Hide()
@@ -33,6 +34,7 @@ public abstract class BaseWindow : MonoBehaviour
         IsHidden = true;
         DOTween.Kill(transform);
         transform.DOScale(0, 0f);
+        Cursor.visible = false;
     }
 
     public abstract void Initialize();
