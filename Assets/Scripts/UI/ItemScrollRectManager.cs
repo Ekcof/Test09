@@ -32,10 +32,7 @@ public class ItemScrollRectManager : MonoBehaviour
         for (int i = 0; i < items.Count; i++)
         {
             if (items[i] == null || string.IsNullOrEmpty(items[i].Id))
-            {
-                Debug.Log($"________The {items[i]} is null. Continue");
                 continue;
-            }
 
             GameObject slotGO = Instantiate(_slotPrefab, _content);
             ItemSlot slot = slotGO.GetComponent<ItemSlot>();

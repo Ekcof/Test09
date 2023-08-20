@@ -28,7 +28,6 @@ public class ItemSlot : MonoBehaviour
     {
         if (item == null)
         {
-            Debug.Log("________Error: item is null");
             return;
         }
 
@@ -46,7 +45,6 @@ public class ItemSlot : MonoBehaviour
     {
         if (data.Slot != this)
         {
-            Debug.Log($"_______Set the default color for {_title.text} slot");
             if (data.Slot != null)
                 if (_mainBody != null)
                     _mainBody.color = _unselectedColor;

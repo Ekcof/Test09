@@ -34,7 +34,6 @@ public class ItemHolder : ScriptableObject
             return CloneTheDisposableItem(disposable);
         }
 
-        Debug.Log($"No item with Id {id} in item holder");
         return null;
     }
 

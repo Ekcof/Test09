@@ -14,7 +14,6 @@ public class PlayerSubmitController : MonoBehaviour
 
     private InputAction iKeyAction;
     private InputAction eKeyAction;
-    private InputAction spaceKeyAction;
 
     private void Awake()
     {
@@ -22,21 +21,14 @@ public class PlayerSubmitController : MonoBehaviour
 
         iKeyAction = keyboardMouseMap.FindAction("I");
         eKeyAction = keyboardMouseMap.FindAction("E");
-        spaceKeyAction = keyboardMouseMap.FindAction("Space");
 
-        if (iKeyAction != null)
-            Debug.Log($"_________I has {iKeyAction.bindings.Count} bindings");
         iKeyAction.Enable();
         iKeyAction.performed += OnInventoryKeyPressed;
 
         eKeyAction.Enable();
         eKeyAction.performed += OnSubmitKeyPressed;
 
-        spaceKeyAction.Enable();
-        spaceKeyAction.performed += OnSpaceKeyPressed;
-
         keyboardMouseMap.Enable();
-        Debug.Log("_______Submit controller has been initialized");
     }
 
     private void OnInventoryKeyPressed(InputAction.CallbackContext context)
@@ -54,16 +46,10 @@ public class PlayerSubmitController : MonoBehaviour
 
     private void OnSubmitKeyPressed(InputAction.CallbackContext context)
     {
-        Debug.Log("E key pressed");
         if (_player.TryPickUpItem())
             return;
 
         TryToStartTrade();
-    }
-
-    private void OnSpaceKeyPressed(InputAction.CallbackContext context)
-    {
-        Debug.Log("Space key pressed");
     }
 
     private void TryToStartTrade()

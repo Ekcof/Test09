@@ -590,7 +590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.44313726, g: 0.4117647, b: 0.4117647, a: 0.59607846}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1453,8 +1453,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8384406282740207990}
   m_HandleRect: {fileID: 8384406282740207991}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.46858567
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1629,7 +1629,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000015258789, y: 0.00030517578}
+  m_AnchoredPosition: {x: -5257.862, y: 5548.552}
   m_SizeDelta: {x: 0, y: -0.17999268}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &8384406281594601676
@@ -1742,8 +1742,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _closeButton: {fileID: 8384406280740938800}
   _unit: {fileID: 0}
-  _scrollRect: {fileID: 8384406282133501045}
-  _content: {fileID: 8384406281533073396}
   _scrollManager: {fileID: 6022499523885583700}
   _equipButton: {fileID: 8384406281846510063}
   _dropButton: {fileID: 8384406280784025322}

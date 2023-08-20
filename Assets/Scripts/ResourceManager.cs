@@ -44,10 +44,7 @@ public class ResourceManager : MonoBehaviour
     {
         var item = _itemHolder.CloneTheItem(id);
         if (item == null)
-        {
-            Debug.Log("______Failed to create new item");
             return null;
-        }
 
         item.SetAmount(item.IsStackable ? amount : 1);
         return item;

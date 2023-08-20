@@ -87,10 +87,8 @@ public class TradeWindow : BaseWindow
         _currentItem = data.Slot.Item;
 
         if (_currentItem == null || string.IsNullOrEmpty(_currentItem.Id))
-        {
-            Debug.Log("_______Failed to select item from slot");
             return;
-        }
+        
 
         _buyButton.gameObject.SetActive(true);
         _buyButtonText.text = (data.Owner == _player) ? "Sell Item" : "Buy Item";
