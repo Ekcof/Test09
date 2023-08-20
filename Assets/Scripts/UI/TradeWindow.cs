@@ -48,7 +48,9 @@ public class TradeWindow : BaseWindow
             return;
         _player = data.Player;
         _trader = data.Player.Trader;
-            base.OnOpenWindow(data);
+        _warningText.text = string.Empty;
+
+        base.OnOpenWindow(data);
     }
 
     public override void Initialize()
@@ -77,7 +79,6 @@ public class TradeWindow : BaseWindow
 
         _title.text = string.Empty;
         _description.text = string.Empty;
-        _warningText.text = string.Empty;
     }
 
     private void OnSelectSlot(OnSelectSlot data)

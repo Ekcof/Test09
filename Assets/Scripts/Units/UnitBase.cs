@@ -125,7 +125,13 @@ public class UnitBase : MonoBehaviour
                 }
             }
             else
-                _items.Add(data.Item);
+            {
+                var existingItem = _items.FirstOrDefault(x => x.Id == data.Item.Id);
+                if (existingItem != null)
+                    existingItem.AddAmount(1);
+                else
+                    _items.Add(data.Item);
+            }
             AddMoney(-data.Price);
         }
         else if (data.Seller == this)

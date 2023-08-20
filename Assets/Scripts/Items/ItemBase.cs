@@ -35,13 +35,13 @@ public class ItemBase
     {
         _amount = amount;
         if (_amount < 0)
-            amount = 0;
+            _amount = 0;
     }
 
     public void AddAmount(int amount)
     {
         _amount += amount;
         if (_amount < 0)
-            amount = 0;
+            _amount = 0;
     }
 }
