@@ -19,6 +19,9 @@ i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scri
 ++Items
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\items\
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\items\
+++Player
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\player\
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\player\
 ++SO
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\so\
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\so\
@@ -34,6 +37,9 @@ i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scri
 ++BaseWindow.cs
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\ui\basewindow.cs
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\ui\basewindow.cs
+++HUDVisualisator.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\ui\hudvisualisator.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\ui\hudvisualisator.cs
 ++InventoryWindow.cs
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\ui\inventorywindow.cs
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\ui\inventorywindow.cs
@@ -61,21 +67,9 @@ i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scri
 ++UnitPlayer.cs
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\units\unitplayer.cs
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\units\unitplayer.cs
-++CameraFollower.cs
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\camerafollower.cs
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\camerafollower.cs
 ++EventsBus.cs
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\eventsbus.cs
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\eventsbus.cs
-++HUDVisualisator.cs
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\hudvisualisator.cs
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\hudvisualisator.cs
-++PlayerMovementController.cs
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\playermovementcontroller.cs
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\playermovementcontroller.cs
-++PlayerSubmitController.cs
-i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\playersubmitcontroller.cs
-i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\playersubmitcontroller.cs
 ++ResourceManager.cs
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\resourcemanager.cs
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\resourcemanager.cs
@@ -775,6 +769,15 @@ i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scri
 ++Uniform.cs
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\items\uniform.cs
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\items\uniform.cs
+++CameraFollower.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\player\camerafollower.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\player\camerafollower.cs
+++PlayerMovementController.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\player\playermovementcontroller.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\player\playermovementcontroller.cs
+++PlayerSubmitController.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\player\playersubmitcontroller.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\player\playersubmitcontroller.cs
 ++LiberationSans - OFL.txt
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\textmesh pro\fonts\liberationsans - ofl.txt
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\textmesh pro\fonts\liberationsans - ofl.txt

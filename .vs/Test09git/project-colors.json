@@ -10,7 +10,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Прочие файлы",
       "ColorIndex": -1
+    },
+    "6bb81c64-78f7-f965-ee17-db2ba579594a": {
+      "ProjectGuid": "6bb81c64-78f7-f965-ee17-db2ba579594a",
+      "DisplayName": "Assembly-CSharp.Player",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
