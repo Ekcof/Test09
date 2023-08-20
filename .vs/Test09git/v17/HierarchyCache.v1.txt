@@ -52,6 +52,9 @@ i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scri
 ++LoadOut.cs
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\units\loadout.cs
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\units\loadout.cs
+++Trader.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\units\trader.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\units\trader.cs
 ++UnitBase.cs
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\units\unitbase.cs
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\units\unitbase.cs
@@ -64,6 +67,9 @@ i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scri
 ++EventsBus.cs
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\eventsbus.cs
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\eventsbus.cs
+++HUDVisualisator.cs
+i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\hudvisualisator.cs
+i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\hudvisualisator.cs
 ++PlayerMovementController.cs
 i:{bf54ea7b-5233-ab02-fd4b-94d2fa99e4c9}:c:\unity_projects\test09git\assets\scripts\playermovementcontroller.cs
 i:{6bb81c64-78f7-f965-ee17-db2ba579594a}:c:\unity_projects\test09git\assets\scripts\playermovementcontroller.cs

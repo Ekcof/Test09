@@ -67,6 +67,7 @@ public class TradeWindow : BaseWindow
     {
         _currentItem = null;
         _buyButton.gameObject.SetActive(false);
+        _itemImage.gameObject.SetActive(false);
 
         _playerScrollManager.FillScrollRect(_player);
         _traderScrollManager.FillScrollRect(_trader);
@@ -99,7 +100,8 @@ public class TradeWindow : BaseWindow
         _description.text = _currentItem.Description;
         _title.text = _currentItem.Name;
         _warningText.text = string.Empty;
-        _itemImage.sprite = ResourceManager.Instance.GetSpriteByID(_title.text);
+        _itemImage.sprite = ResourceManager.Instance.GetSpriteByID(data.Slot.Item.IconId);
+        _itemImage.gameObject.SetActive(true);
     }
 
     private void OnTryToTrade()
@@ -124,7 +126,7 @@ public class TradeWindow : BaseWindow
             var price = (int)(_currentItem.BasePrice * _player.TradeModificator);
             if (_trader.Money >= price)
             {
-                EventsBus.Publish(new OnTradeItem { Buyer = _player, Seller = _trader, Item = _currentItem, Price = price });
+                EventsBus.Publish(new OnTradeItem { Buyer = _trader, Seller = _player, Item = _currentItem, Price = price });
             }
             else
             {
