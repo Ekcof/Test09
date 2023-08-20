@@ -73,7 +73,7 @@ public class OnGetPayment
 
 public class OnOpenWindow
 {
-    public UnitBase Player;
+    public UnitPlayer Player;
     public UnitBase Counterpart;
     public BaseWindow Window;
 }
@@ -116,4 +116,28 @@ public class OnLeaveItemPickableZone
 {
     public GameObject Player;
     public ItemContainer Container;
+}
+
+public class OnTogglePickableZone
+{
+    public UnitPlayer Player;
+    public bool IsCanPick;
+}
+
+public class OnChangeMoneyAmount
+{
+    public GameObject Player;
+    public int Money;
+}
+
+public class OnEnterTraderZone
+{
+    public UnitPlayer Player;
+    public Trader Trader;
+}
+
+public class OnLeaveTraderZone
+{
+    public UnitPlayer Player;
+    public Trader Trader;
 }

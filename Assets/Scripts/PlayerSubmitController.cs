@@ -9,7 +9,8 @@ public class PlayerSubmitController : MonoBehaviour
     [SerializeField] private InputActionAsset actionAsset;
     [SerializeField] private string actionMapName = "Main";
     [SerializeField] private InventoryWindow _inventoryWindow;
-    [SerializeField] private UnitPlayer _unitBase;
+    [SerializeField] private TradeWindow _tradeWindow;
+    [SerializeField] private UnitPlayer _player;
 
     private InputAction iKeyAction;
     private InputAction eKeyAction;
@@ -48,18 +49,32 @@ public class PlayerSubmitController : MonoBehaviour
         else if (BaseWindow.CurrentWindow != null)
             return;
 
-        EventsBus.Publish(new OnOpenWindow { Player = _unitBase, Window = _inventoryWindow });
+        EventsBus.Publish(new OnOpenWindow { Player = _player, Window = _inventoryWindow });
     }
 
     private void OnSubmitKeyPressed(InputAction.CallbackContext context)
     {
         Debug.Log("E key pressed");
-        _unitBase.TryPickUpItem();
-        //Try to start Trade
+        if (_player.TryPickUpItem())
+            return;
+
+        TryToStartTrade();
     }
 
     private void OnSpaceKeyPressed(InputAction.CallbackContext context)
     {
         Debug.Log("Space key pressed");
+    }
+
+    private void TryToStartTrade()
+    {
+        if (_player.Trader == null)
+            return;
+
+        if (BaseWindow.CurrentWindow != null)
+            BaseWindow.CurrentWindow.Hide();
+
+        EventsBus.Publish(new OnOpenWindow { Player = _player, Window = _tradeWindow });
+
     }
 }

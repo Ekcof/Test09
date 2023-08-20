@@ -37,7 +37,7 @@ public abstract class BaseWindow : MonoBehaviour
 
     public abstract void Initialize();
 
-    private void OnOpenWindow(OnOpenWindow data)
+    private protected virtual void OnOpenWindow(OnOpenWindow data)
     {
         if (data.Window != this)
             return;

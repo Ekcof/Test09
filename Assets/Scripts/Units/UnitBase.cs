@@ -96,7 +96,7 @@ public class UnitBase : MonoBehaviour
         AddMoney(data.Money);
     }
 
-    private void AddMoney(int money)
+    private protected virtual void AddMoney(int money)
     {
         _money = Math.Clamp(_money + money, 0, int.MaxValue);
     }

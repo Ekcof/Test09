@@ -42,6 +42,15 @@ public class TradeWindow : BaseWindow
         base.OnDestroy();
     }
 
+    private protected override void OnOpenWindow(OnOpenWindow data)
+    {
+        if (data.Window != this)
+            return;
+        _player = data.Player;
+        _trader = data.Player.Trader;
+            base.OnOpenWindow(data);
+    }
+
     public override void Initialize()
     {
         Refresh();
