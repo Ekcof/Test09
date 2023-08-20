@@ -23,9 +23,7 @@ MonoBehaviour:
     UniformId: uniform0
   - Id: trader1
     ItemDatas:
-    - Id: potion1
+    - Id: water0
       Amount: 5
-    - Id: uniform1
-      Amount: 1
     HelmetId: 
     UniformId: uniform1
