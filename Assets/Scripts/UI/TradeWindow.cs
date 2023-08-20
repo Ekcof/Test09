@@ -133,6 +133,7 @@ public class TradeWindow : BaseWindow
                 _warningText.text = "You have not enough money";
             }
         }
+        EventsBus.Publish(new OnChangeMoneyAmount { Player = _player.gameObject, Money = _player.Money });
         Refresh();
     }
 

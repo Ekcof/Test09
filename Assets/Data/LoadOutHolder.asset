@@ -17,8 +17,6 @@ MonoBehaviour:
     ItemDatas:
     - Id: potion0
       Amount: 3
-    - Id: potion0
-      Amount: 2
     - Id: hat0
       Amount: 1
     HelmetId: hat1

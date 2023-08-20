@@ -65,7 +65,7 @@ public class ResourceManager : MonoBehaviour
         {
             if (item != null && !string.IsNullOrEmpty(item.Id) && item.Amount > 0)
             {
-                items.Add(CreateNewItem(id, item.Amount));
+                items.Add(CreateNewItem(item.Id, item.Amount));
             }
         }
 

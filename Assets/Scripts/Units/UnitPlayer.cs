@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -78,4 +79,8 @@ public class UnitPlayer : UnitBase
         _currentTrader = null;
     }
 
+    public static implicit operator GameObject(UnitPlayer v)
+    {
+        throw new NotImplementedException();
+    }
 }
