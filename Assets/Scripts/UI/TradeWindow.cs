@@ -131,10 +131,10 @@ public class TradeWindow : BaseWindow
             }
             else
             {
-                _warningText.text = "You have not enough money";
+                _warningText.text = "Trader has not enough money";
             }
         }
-        EventsBus.Publish(new OnChangeMoneyAmount { Player = _player.gameObject, Money = _player.Money });
+        EventsBus.Publish(new OnChangeMoneyAmount { Owner = _player, Money = _player.Money });
         Refresh();
     }
 

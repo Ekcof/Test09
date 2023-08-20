@@ -57,18 +57,13 @@ public class UnitPlayer : UnitBase
         return true;
     }
 
-    private protected override void AddMoney(int money)
-    {
-        base.AddMoney(money);
-        EventsBus.Publish(new OnChangeMoneyAmount { Money = _money });
-    }
-
     private void OnEnterTraderZone(OnEnterTraderZone data)
     {
         if (data.Player != this)
             return;
 
         _currentTrader =  data.Trader;
+        EventsBus.Publish<OnToggleTraderZone>(new OnToggleTraderZone { Player = this, IsCanTrade = (_currentTrader != null) });
     }
 
     private void OnLeaveTraderZone(OnLeaveTraderZone data)
@@ -77,6 +72,7 @@ public class UnitPlayer : UnitBase
             return;
 
         _currentTrader = null;
+        EventsBus.Publish<OnToggleTraderZone>(new OnToggleTraderZone { Player = this, IsCanTrade = (_currentTrader != null) });
     }
 
     public static implicit operator GameObject(UnitPlayer v)

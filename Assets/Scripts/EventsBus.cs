@@ -124,9 +124,16 @@ public class OnTogglePickableZone
     public bool IsCanPick;
 }
 
+public class OnToggleTraderZone
+{
+    public UnitPlayer Player;
+    public bool IsCanTrade;
+}
+
+
 public class OnChangeMoneyAmount
 {
-    public GameObject Player;
+    public UnitBase Owner;
     public int Money;
 }
 

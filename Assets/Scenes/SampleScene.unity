@@ -456,7 +456,7 @@ MonoBehaviour:
   _player: {fileID: 1862135555}
   _iconCanPick: {fileID: 1070050274}
   _iconCanTrade: {fileID: 1185650242}
-  _moneyText: {fileID: 0}
+  _moneyText: {fileID: 1682605672}
 --- !u!1001 &388070309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2643,19 +2643,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3872022517352778656, guid: d2e914c5bdea9ec46b65f680305d5977, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 51538.53
+      value: 87083.984
       objectReference: {fileID: 0}
     - target: {fileID: 3872022517352778656, guid: d2e914c5bdea9ec46b65f680305d5977, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 28363.484
+      value: 51117.324
       objectReference: {fileID: 0}
     - target: {fileID: 8384406281533073396, guid: d2e914c5bdea9ec46b65f680305d5977, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -51686.87
+      value: -87334.96
       objectReference: {fileID: 0}
     - target: {fileID: 8384406281533073396, guid: d2e914c5bdea9ec46b65f680305d5977, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 28614.148
+      value: 51569.33
       objectReference: {fileID: 0}
     - target: {fileID: 8384406281637933340, guid: d2e914c5bdea9ec46b65f680305d5977, type: 3}
       propertyPath: m_Name
@@ -2887,6 +2887,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33898d4f30bb6214eb17e61131dcca10, type: 3}
+--- !u!114 &1682605672 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7494167138402218629, guid: 26e09999d17dd6e47bc7717ad705f74d, type: 3}
+  m_PrefabInstance: {fileID: 7494167137787009759}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1696779622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4054,11 +4065,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8384406281533073396, guid: 12bfcdc736683e3489fefe8459a62859, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1187646.5
+      value: -1213545.4
       objectReference: {fileID: 0}
     - target: {fileID: 8384406281533073396, guid: 12bfcdc736683e3489fefe8459a62859, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1183707.4
+      value: 1212475
       objectReference: {fileID: 0}
     - target: {fileID: 8384406281637933340, guid: 12bfcdc736683e3489fefe8459a62859, type: 3}
       propertyPath: m_Name

@@ -14,13 +14,14 @@ public class HUDVisualisator : MonoBehaviour
     {
         EventsBus.Subscribe<OnChangeMoneyAmount>(OnChangeMoneyAmount);
         EventsBus.Subscribe<OnTogglePickableZone>(OnTogglePickableZone);
-
+        EventsBus.Subscribe<OnToggleTraderZone>(OnToggleTraderZone);
     }
 
     private void OnDestroy()
     {
         EventsBus.Unsubscribe<OnChangeMoneyAmount>(OnChangeMoneyAmount);
         EventsBus.Unsubscribe<OnTogglePickableZone>(OnTogglePickableZone);
+        EventsBus.Unsubscribe<OnToggleTraderZone>(OnToggleTraderZone);
     }
 
     private void OnTogglePickableZone(OnTogglePickableZone data)
@@ -29,14 +30,21 @@ public class HUDVisualisator : MonoBehaviour
         Refresh();
     }
 
+    private void OnToggleTraderZone(OnToggleTraderZone data)
+    {
+        _canTrade = data.IsCanTrade;
+        Refresh();
+    }
+
     private void Refresh()
-    { 
-            _iconCanPick.SetActive(_canPick);
+    {
+        _iconCanPick.SetActive(_canPick);
+        _iconCanTrade.SetActive(_canTrade);
     }
 
     private void OnChangeMoneyAmount(OnChangeMoneyAmount data)
     {
-        if (data.Player != _player)
+        if (data.Owner != _player)
             return;
 
         _moneyText.text = $"${data.Money}";
